@@ -7,7 +7,7 @@ module ShortUnits
         F, pΩ, nΩ, µΩ, mΩ, Ω, kΩ, MΩ, mV, V, MV, mHz, Hz, MHz, GHz, THz, fA, pA, 
         nA, µA, mA, A, C, N, mol, ns, ms, µs, s, S, nW, µW, mW, W, MW, GW, eV, 
         K, mPa, Pa, kPa, MPa, GPa, nm, torr, mtorr, atm, rad, deg, sr, ft, in, yd,
-        gal, qt, cup, oz, lbs, btu
+        gal, qt, cup, oz, lbs, btu, L
 
     using SIUnits
 
@@ -109,6 +109,7 @@ module ShortUnits
     const oz = Ounce
     const lbs = Pound
     const btu = Btu
+    const L = Liter
     
     
     

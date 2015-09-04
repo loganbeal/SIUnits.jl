@@ -1,4 +1,4 @@
-export ElectronVolt, Torr, Atmosphere, Degree, Foot, Gallon, Ounce, Pound, Btu
+export ElectronVolt, Torr, Atmosphere, Degree, Foot, Gallon, Ounce, Pound, Btu, Liter
 
 const ElectronVolt = NonSIUnit{typeof(Joule),:eV}()
 convert(::Type{SIQuantity},::typeof(ElectronVolt)) = 1.60217656535e-19Joule
@@ -21,6 +21,10 @@ for (func,funcd) in ((:sin,:sind),
     @eval $func{T}(θ::NonSIQuantity{T,$(typeof(Degree))}) = $funcd(θ.val)
 end
 
+
+const Liter = NonSIUnit{typeof(Meter),:L}()
+convert(::Type{SIQuantity},::typeof(Liter)) = Meter^3/1000.0
+
 const Foot = NonSIUnit{typeof(Meter),:ft}()
 convert(::Type{SIQuantity},::typeof(Foot)) = 0.3048*Meter 
 
@@ -30,17 +34,17 @@ convert(::Type{SIQuantity},::typeof(Foot)) = 0.3048*Meter
 #const Yard = NonSIUnit{typeof(Meter),:yd}()
 #convert(::Type{SIQuantity},::typeof(Yard)) = 0.3048*3*Meter 
 
-const Gallon = NonSIUnit{typeof(Liter),:gal}()
-convert(::Type{SIQuantity},::typeof(Gallon)) = 3.785412*Liter
+const Gallon = NonSIUnit{typeof(Meter),:gal}()
+convert(::Type{SIQuantity},::typeof(Gallon)) = 3.785412*Meter^3/1000.0
 
-#const Quart = NonSIUnit{typeof(Liter),:qt}()
-#convert(::Type{SIQuantity},::typeof(Quart)) = 3.785412/4*Liter
+#const Quart = NonSIUnit{typeof(Meter),:qt}()
+#convert(::Type{SIQuantity},::typeof(Quart)) = 3.785412/4*Meter^3/1000.0
 
-#const Cup = NonSIUnit{typeof(Liter),:cup}()
-#convert(::Type{SIQuantity},::typeof(Cup)) = 3.785412/16*Liter
+#const Cup = NonSIUnit{typeof(Meter),:cup}()
+#convert(::Type{SIQuantity},::typeof(Cup)) = 3.785412/16*Meter^3/1000.0
 
-const Ounce = NonSIUnit{typeof(Liter),:oz}()
-convert(::Type{SIQuantity},::typeof(Ounce)) = 29.57353/1000*Liter
+const Ounce = NonSIUnit{typeof(Meter),:oz}()
+convert(::Type{SIQuantity},::typeof(Ounce)) = 29.57353/1000*Meter^3/1000.0
 
 const Pound = NonSIUnit{typeof(KiloGram),:lbs}()
 convert(::Type{SIQuantity},::typeof(Pound)) = 0.453592*KiloGram
