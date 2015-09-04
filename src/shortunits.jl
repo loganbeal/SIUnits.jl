@@ -101,11 +101,11 @@ module ShortUnits
     
     #English Custom Units
     const ft = Foot
-    const in = Foot/12.
-    const yd = Foot*3
+    const in = Inch
+    const yd = Yard
     const gal = Gallon
-    const qt = Gallon/4
-    const cup = Gallon/16
+    const qt = Quart
+    const cup = Cup
     const oz = Ounce
     const lbs = Pound
     const btu = Btu
