@@ -6,7 +6,8 @@ module ShortUnits
     export µg, mg, g, kg, µm, mm, cm, m, km, mJ, J, MJ, HJ, fF, pF, nF, µF, mF,
         F, pΩ, nΩ, µΩ, mΩ, Ω, kΩ, MΩ, mV, V, MV, mHz, Hz, MHz, GHz, THz, fA, pA, 
         nA, µA, mA, A, C, N, mol, ns, ms, µs, s, S, nW, µW, mW, W, MW, GW, eV, 
-        K, mPa, Pa, kPa, MPa, GPa, nm, torr, mtorr, atm, rad, deg, sr
+        K, mPa, Pa, kPa, MPa, GPa, nm, torr, mtorr, atm, rad, deg, sr, ft, in, yd,
+        gal, qt, cup, oz, lbs, btu
 
     using SIUnits
 
@@ -97,4 +98,20 @@ module ShortUnits
     const rad   = Radian
     const deg   = Degree
     const sr    = Steradian
+    
+    #English Custom Units
+    const ft = Foot
+    const in = Foot/12.
+    const yd = Foot*3
+    const gal = Gallon
+    const qt = Gallon/4
+    const cup = Gallon/16
+    const oz = Ounce
+    const lbs = Pound
+    const btu = Btu
+    
+    
+    
+    
+    
 end
