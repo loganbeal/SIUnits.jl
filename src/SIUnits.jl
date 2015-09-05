@@ -362,6 +362,20 @@ module SIUnits
 
     const CentiMeter = Centi*Meter
 
+# English Units
+export Foot, Gallon, Ounce, Pound, Btu, Liter, Inch, Yard, Quart, Cup
+const Liter = Meter^3/1000.0
+const Foot = 0.3048*Meter 
+const Inch =0.3048/12*Meter 
+const Yard = 0.3048*3*Meter 
+const Gallon = 3.785412*Meter^3/1000.0
+const Quart = 3.785412/4*Meter^3/1000.0
+const Cup = 3.785412/16*Meter^3/1000.0
+const Ounce = 29.57353/1000*Meter^3/1000.0
+const Pound = 0.453592*KiloGram
+const Btu = 1055.056*Joule
+
+
 
 # Pretty Printing - Text
     superscript(i) = map(repr(i)) do c
