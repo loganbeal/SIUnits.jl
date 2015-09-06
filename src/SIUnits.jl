@@ -363,7 +363,12 @@ module SIUnits
     const CentiMeter = Centi*Meter
 
 # English Units
-export Foot, Gallon, Ounce, Pound, Btu, Liter, Inch, Yard, Quart, Cup
+export Foot, Gallon, Ounce, Pound, Btu, Liter, Inch, Yard, Quart, Cup, 
+	ElectronVolt, Torr, Atmosphere
+
+const ElectronVolt  = 1.60217656535e-19Joule
+const Torr = 133.322368Pascal
+const Atmosphere = 101325Pascal
 const Liter = Meter^3/1000.0
 const Foot = 0.3048*Meter 
 const Inch =0.3048/12*Meter 
@@ -374,6 +379,10 @@ const Cup = 3.785412/16*Meter^3/1000.0
 const Ounce = 29.57353/1000*Meter^3/1000.0
 const Pound = 0.453592*KiloGram
 const Btu = 1055.056*Joule
+const Minute = 60Second
+const Hour = 60*60*Second
+const Day = 60*60*24*Second
+const Year = 60*60*24*365*Second
 
 
 
