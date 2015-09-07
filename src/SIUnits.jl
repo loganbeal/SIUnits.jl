@@ -364,7 +364,7 @@ module SIUnits
 
 # English Units
 export Foot, Gallon, Ounce, Pound, Btu, Liter, Inch, Yard, Quart, Cup, 
-	ElectronVolt, Torr, Atmosphere
+	ElectronVolt, Torr, Atmosphere, Btu, Minute, Hour, Day, Year
 
 const ElectronVolt  = 1.60217656535e-19Joule
 const Torr = 133.322368Pascal
