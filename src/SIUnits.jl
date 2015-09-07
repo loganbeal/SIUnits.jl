@@ -364,8 +364,7 @@ module SIUnits
 
 # English Units
 export Foot, Gallon, Ounce, Pound, Btu, Liter, Inch, Yard, Quart, Cup, 
-	ElectronVolt, Torr, Atmosphere, Btu, Minute, Hour, Day, Year, Celsius,
-	Fahrenheit, Rankine
+	ElectronVolt, Torr, Atmosphere, Btu, Minute, Hour, Day, Year, Rankine
 
 const ElectronVolt  = 1.60217656535e-19Joule
 const Torr = 133.322368Pascal
@@ -384,8 +383,6 @@ const Minute = 60Second
 const Hour = 60*60*Second
 const Day = 60*60*24*Second
 const Year = 60*60*24*365*Second
-const Celsius = Kelvin - 273.15
-const Fahrenheit = Kelvin*(9/5)-459.67
 const Rankine = Kelvin*(9/5)
 
 
