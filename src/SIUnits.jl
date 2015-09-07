@@ -383,7 +383,7 @@ const Minute = 60Second
 const Hour = 60*60*Second
 const Day = 60*60*24*Second
 const Year = 60*60*24*365*Second
-const Rankine = Kelvin*(9/5)
+const Rankine = Kelvin*(5/9)
 
 
 
