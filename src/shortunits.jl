@@ -7,7 +7,7 @@ module ShortUnits
         F, pΩ, nΩ, µΩ, mΩ, Ω, kΩ, MΩ, mV, V, MV, mHz, Hz, MHz, GHz, THz, fA, pA, 
         nA, µA, mA, A, C, N, mol, ns, ms, µs, s, S, nW, µW, mW, W, MW, GW, eV, 
         K, mPa, Pa, kPa, MPa, GPa, nm, torr, mtorr, atm, rad, deg, sr, ft, inch, yd,
-        gal, qt, cup, oz, lbs, btu, L, min, hr, day, yr, degR, kJ
+        gal, qt, cup, oz, lbs, btu, L, min, hr, day, yr, degR, kJ, psi
 
     using SIUnits
 
@@ -115,7 +115,7 @@ module ShortUnits
     const day = Day
     const yr = Year
     const degR = Rankine
-    
+    const psi = 6894.75729Pa
     const kJ    = Kilo*Joule
     
     
